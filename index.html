@@ -1,0 +1,464 @@
+<html>
+<head>
+<title>Home</title>
+
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+<link rel="stylesheet" href="css/animate.css">
+<!------ js ------>
+<script src="js/jquery.min.js"> </script>
+<!------ js ------>
+<!---- start-smoth-scrolling---->
+		<script type="text/javascript" src="js/move-top.js"></script>
+		<script type="text/javascript" src="js/easing.js"></script>
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+<!---- start-smoth-scrolling---->
+<!--- fonts --->
+<link href='https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,300italic,700italic,900italic' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Monda:400,700' rel='stylesheet' type='text/css'>
+<!--- fonts --->
+</head>
+<body>
+	<!--- header-top ---->
+	<div id="home" class="header-top">
+		<!--- container ---->
+		<div class="container">
+			<div class="header-logo">
+			<a href="#"><img src="images/logo4.png" alt=""/></a>
+				</div>
+				
+		<div class="header-top-grids">
+			<div class="col-md-4 about-nav4">
+				<a class="scroll" href="#about"><span class="nav-icon4"> </span><label>Data race</label></a>
+			</div>
+			<div class="col-md-4 about-nav5">
+				<a class="scroll" href="#portfolio"><span class="nav-icon5"> </span><label>Photos</label></a>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+		<div class="header-bottom-grids">
+			<div class="col-md-6 left-grid text-left">
+					<div class="about-nav">
+						<a class="scroll" href="#"><span class="nav-icon"> </span><label>About</label></a>
+					</div>
+					<div class="about-nav1">
+						<a class="scroll" href="#team"><span class="nav-icon1"> </span><label>team</label></a>
+					</div>
+					<div class="clearfix"> </div>				
+			</div>
+			<div class="col-md-6 right-grid text-right">
+					<div class="about-nav2">
+						<a class="scroll" href="#technology"><span class="nav-icon2"> </span><label>technology</label></a>
+					</div>
+					<div class="about-nav3">
+						<a class="scroll" href="#contact"><span class="nav-icon3"> </span><label>Contact</label></a>
+					</div>
+					<div class="clearfix"> </div>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+		<div class="arrow-grid">
+			<div class="arrow">
+				<a class="scroll" href="#header-nav"><span> </span></a>
+			</div>
+		</div>
+		</div>
+		<!--- container ---->
+	</div>
+<!--- //header-top ---->
+<!--- header-bottom ---->
+<!-- Sticky Nav --->
+<div id="header-nav" class="header-nav">
+		 <div class="top-nav">		
+			 <nav>
+			 <div class="logo">
+				<a href="#"><img src="images/logo2.png" alt=""/></a>
+			 </div>
+				<span class="menu"></span>
+				<ul>
+					<li class="active"><a class="scroll" href="#home">首页</a></li>
+					<li><a class="scroll" href="#about">数据竞争</a></li>					
+					<li><a class="scroll" href="#technology">相关技术</a></li>
+					<li><a class="scroll" href="#portfolio">成果展示</a></li>
+					<li><a class="scroll" href="#team">团队成员</a></li>
+					<li class="contact"><a class="scroll" href="#contact">联系我们</a></li>
+					<div class="clearfix"> </div>
+				</ul>
+			 </nav>
+		 </div>
+		  <!--script-nav-->
+		 <script>
+		 $("span.menu").click(function(){
+		 $(".top-nav ul").slideToggle("slow" , function(){
+		 });
+		 });
+		 </script>
+		 <!--script-nav-->
+		<script src="js/myscript.js"> </script>
+</div>
+<!-- top-nav -->
+<!-- Sticky Nav --->
+
+	<!--- content-about ---->
+	<div id="about" class="content-about">
+		<!--- container ---->
+		<div class="container">
+			<div class="content-about-text">
+				<h2>数据 <small>竞争</small></h2>
+				<span> </span>
+			</div>
+			<div class="row">
+				<div class="col-md-6 content-about-grid-left">
+					<img src="images/screen1.png">
+				</div>
+				<div class="col-md-6 content-about-grid-right">					
+						<p>数据竞争是指：在多线程程序中，来自两个不同线程的
+						      访问操作同时访问一个相同的共享内存位置，且其中至
+						      少有一个线程执行写操作，那么这两个访问操作针对这
+						      个共享内存位置就构成了数据竞争故障。
+						</p>
+						<div class="learn">
+							<a href="#">更多</a>
+						</div>					
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+		<!--- container ---->
+		
+	</div>
+	<!--- content-about ---->
+	<!--- content-tecnology ---->
+	<div id="technology" class="content-team">
+		<!--- container ---->
+		<div class="container">
+			<div class="content-team-text">
+				<h2>相关 <small>技术</small></h2>
+				<span> </span>
+			</div>
+			<div class="well">
+	<div class="well-item">
+		<div class="front" style="background-image: url(images/f1.jpg)">
+                            <div class="inner">
+                                <p>Soot框架</p>
+                                
+                            </div>
+                        </div>
+		<div class="back">
+                            <div class="inner">
+                                <p>Soot是McGill大学的研究人员所开发的一个用于Java字节码分析工具，它完全用Java语言实现；Soot具有良好的技术支持，高质量的开源代码，清晰的内部表示以及良好的扩展性。</p>
+                            </div>
+                        </div>
+	</div>
+	<div class="well-item">
+		<div class="front" style="background-image: url(images/f2.jpg)">
+                            <div class="inner">
+                                <p>发生序关系</p>
+                                
+                            </div>
+                        </div>
+		<div class="back">
+                            <div class="inner">
+                                <p>在多线程并发程序中，对于两个任意的执行操作事件a和b，假如a和b是同一线程内的执行事件，并且a先于b执行，那么a和b之间构成程序顺序，我们称a happens-before b，记作a->b。</p>
+                            </div>
+                        </div>
+	</div><div class="well-item">
+		<div class="front" style="background-image: url(images/f3.jpg)">
+                            <div class="inner">
+                                <p>控制流分析</p>
+                                
+                            </div>
+                        </div>
+		<div class="back">
+                            <div class="inner">
+                                <p>控制流分析是静态分析技术中的一种，通过控制流分析能够得到程序的控制流结构，从而生成程序的控制流图。控制流分析又分为过程内分析和过程间分析，过程内的控制流主要针对的是某个函数内部程序结构流程，而过程间的控制流分析针对的是程序中整个分析环境的函数调用关系。</p>
+                            </div>
+                        </div>
+	</div><div class="well-item">
+		<div class="front" style="background-image: url(images/f4.jpg)">
+                            <div class="inner">
+                                <p>软件重构</p>
+                                
+                            </div>
+                        </div>
+		<div class="back">
+                            <div class="inner">
+                                <p>重构定义为在不改变已经拥有的代码功能的前提下对既有程序源代码进行优化与改进，从而能够实现改善代码质量的预期目标，使得既有程序代码拥有可维护性与可复用性等性能的大幅度提高。</p>
+                            </div>
+                        </div>
+	</div><div class="well-item">
+		<div class="front" style="background-image: url(images/f5.png)">
+                            <div class="inner">
+                                <p>多线程同步机制</p>
+                                
+                            </div>
+                        </div>
+		<div class="back">
+                            <div class="inner">
+                                <p>多线程为Java编程中的一个突出特点，Java并行编程代码通常经过线程完成编程，但是很多情况下存在多个线程被同一个存储单元共享，虽然减少了编程中产生的不便，但缓冲域交叉访问的访问冲突问题也随之而来。对于线程安全同步问题，在Java中的Synchronized的开发，较高效的避免了线程不安全问题带来的隐患。</p>
+                            </div>
+                        </div>
+	</div><div class="well-item">
+		<div class="front" style="background-image: url(images/f6.jpg)">
+                            <div class="inner">
+                                <p>抽象语法树</p>
+                                
+                            </div>
+                        </div>
+		<div class="back">
+                            <div class="inner">
+                                <p>抽象语法树（abstract syntax tree或者缩写为AST），或者语法树（syntax tree），是源代码的抽象语法结构的树状表现形式，这里特指编程语言的源代码。树上的每个节点都表示源代码中的一种结构。</p>
+                            </div>
+                        </div>
+	</div>
+</div>
+
+
+		</div>	
+	<!--- content-tecnology ---->
+	</div>
+
+	
+	<!--- content-portfolio ---->
+		<!--- container ---->
+<div class="container">			
+	 <div id="portfolio" class="portfolio">
+		 <div class="port-text">
+				<h2>成果 <small>展示</small></h2>
+				<span class="folio"> </span>
+			</div>
+			<div  class="section" id="section-3">
+	      <ul id="filters" class="clearfix wow bounceIn" data-wow-delay="0.4s">
+			<li><span class="filter active" data-filter="app card icon logo fun">所有</span></li>
+			<li><span class="filter" data-filter="app">检测</span></li>
+			<li><span class="filter" data-filter="card">修复</span></li>			
+			<li><span class="filter" data-filter="fun">视频</span></li>
+	        </ul>
+	     <div id="portfoliolist">
+	     	        <div class="portfolio fun mix_all" data-cat="fun" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper wow bounceIn">		
+							
+						     <video src="images/01.mp4" autoplay="autoplay" preload="none" controls="controls"></video>
+							 <p>检测视频演示</p>
+							 
+						</div>
+			        </div>	
+					<div class="portfolio app mix_all" data-cat="card" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper wow bounceIn" data-wow-delay="0.4s">		
+							
+						     <img src="images/t1.png" class="img-responsive" alt=""/>
+							<p>数据竞争故障检测界面</p>
+							
+
+						</div>
+					</div>				
+					<div class="portfolio app mix_all" data-cat="app" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper wow bounceIn" data-wow-delay="0.4s">		
+							
+						     <img src="images/t2.png" class="img-responsive" alt=""/>
+							 <p>数据竞争检测结果输出界面</p>
+							 
+
+						</div>
+					</div>		
+					<div class="portfolio card mix_all" data-cat="card" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper wow bounceIn" data-wow-delay="0.4s">	
+							<center>
+							
+						     <img src="images/t3.png" class="img-responsive" alt=""/></center>
+							 <p>锁效率对比图</p>
+							 
+						</div>
+					</div>				
+					<div class="portfolio card mix_all" data-cat="icon" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper wow bounceIn" data-wow-delay="0.4s">		
+							
+						     <img src="images/t4.png" class="img-responsive" alt=""/>
+							 <p>数据竞争程序修复前后代码对比</p>
+							
+						</div>
+					</div>	
+						
+									  
+		   <div class="clearfix"></div>	
+		  
+	  </div>
+	</div>
+</div> 
+<!-- Script for gallery Here-->
+<script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+<script type="text/javascript">
+	$(function () {
+		var filterList = {
+		init: function () {
+// MixItUp plugin
+// http://mixitup.io
+				$('#portfoliolist').mixitup({
+					targetSelector: '.portfolio',
+					filterSelector: '.filter',
+					effects: ['fade'],
+					easing: 'snap',
+				// call the hover effect
+				onMixEnd: filterList.hoverEffect()
+	});				
+},
+		hoverEffect: function () {
+// Simple parallax effect
+		$('#portfoliolist .portfolio').hover(
+			function () {
+			$(this).find('.label').stop().animate({bottom: 0}, 200, 'easeOutQuad');
+			$(this).find('img').stop().animate({top: -30}, 500, 'easeOutQuad');				
+			},
+					function () {
+						$(this).find('.label').stop().animate({bottom: -40}, 200, 'easeInQuad');
+						$(this).find('img').stop().animate({top: 0}, 300, 'easeOutQuad');								
+			}		
+		);				
+	}
+};
+// Run the show!
+		filterList.init();
+	});	
+</script>
+<!--Gallery Script Ends-->	
+		</div>
+		<!--- container ---->
+	<!--- content-portfolio ---->
+	<div id="team" class="content-services">
+		<div class="port-text1">
+				<h2>团队 <small>成员</small></h2>
+				<span class="folio"> </span>
+			</div>
+		<!--- container ---->
+		<div class="container">
+			
+			<!-- requried-jsfiles-for owl -->
+				<link href="css/owl.carousel.css" rel="stylesheet">
+							    <script src="js/owl.carousel.js"></script>
+							        <script>
+							    $(document).ready(function() {
+							      $("#owl-demo").owlCarousel({
+							        items : 1,
+							        lazyLoad : true,
+							        autoPlay : true,
+							        navigation : false,
+							        navigationText :  false,
+							        pagination : true,
+							      });
+							    });
+							    </script>
+			<!-- //requried-jsfiles-for owl -->
+			<div id="owl-demo" class="owl-carousel">
+				<div class="item">
+					<div class="image-grid">
+						<img src="images/n33.jpg ">
+					</div>
+					<div class="services-bottom-text">
+						<p>张晓萱</p>	
+					</div>
+					
+					
+				</div>
+				<div class="item">
+					<div class="image-grid">
+						<img src="images/n22.jpg">
+					</div>
+					<div class="services-bottom-text">
+						<p>常琳珂</p>	
+					</div>
+					
+					
+				</div>
+				<div class="item">
+					<div class="image-grid">
+						<img src="images/n22.jpg">
+					</div>
+					<div class="services-bottom-text">
+						<p>邹俊杰</p>	
+					</div>
+					
+					
+				</div>
+				<div class="item">
+					<div class="image-grid">
+						<img src="images/n22.jpg">
+					</div>
+					<div class="services-bottom-text">
+						<p>赵钰玮</p>	
+					</div>
+					
+					
+				</div>
+				<div class="item">
+					<div class="image-grid">
+						<img src="images/n33.jpg">
+					</div>
+					<div class="services-bottom-text">
+						<p>李天慧</p>	
+					</div>
+					
+					
+				</div>
+				<div class="item">
+					<div class="image-grid">
+						<img src="images/n22.jpg">
+					</div>
+					<div class="services-bottom-text">
+						<p>孙瑞男</p>	
+					</div>
+					
+					
+				</div>
+			</div>
+			<div class="services-bottom"></div>
+		</div>
+		<!--- container ---->
+	</div>
+	<!--- content-services ---->
+	<!--- content-Get-in-touch ---->
+	<div id="contact" id="arrow" class="content-Get-in-touch">
+		<!--- container ---->
+		
+		<div class="container">
+			
+			<div class="Get-in-touch-grids">
+				<div style="width: 50%;text-align: center;display: inline-block;float: left;">
+           <img src="images/hebust.jpg" alt="" style="width: 400px;text-align: center;position:relative;padding-top: 10px">
+       </div>
+        <div style="width: 50%;text-align: center;display: inline-block;float: left;font-size: 30px;">
+           <div style="line-height: 70px">河北科技大学</div>
+           <div style="line-height: 70px">信息学院</div>
+       </div>
+				<div class="clearfix"> </div>
+			</div>
+			
+		</div>
+		<!--- container ---->
+	</div>
+	<script type="text/javascript">
+									$(document).ready(function() {
+										/*
+										var defaults = {
+								  			containerID: 'toTop', // fading element id
+											containerHoverID: 'toTopHover', // fading element hover id
+											scrollSpeed: 1200,
+											easingType: 'linear' 
+								 		};
+										*/
+										
+										$().UItoTop({ easingType: 'easeOutQuart' });
+										
+									});
+								</script>
+									<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+	<!--- content-Get-in-touch ---->
+
+</body>
+</html>
